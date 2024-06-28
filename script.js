@@ -28,7 +28,7 @@ document.getElementById('username-form').addEventListener('submit', function(eve
     
     const username = document.getElementById('username').value;
     
-    fetch('/submit', {
+    fetch('http://localhost:5000/submit', {  // Make sure to replace with the correct URL if needed
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -48,4 +48,3 @@ document.getElementById('username-form').addEventListener('submit', function(eve
         alert('An error occurred. Please try again.');
     });
 });
-
