@@ -28,7 +28,7 @@ document.getElementById('username-form').addEventListener('submit', function(eve
     
     const username = document.getElementById('username').value;
     
-    fetch('http://localhost:5000/submit', {  // Make sure to replace with the correct URL if needed
+    fetch('http://162.168.1.171:5000/submit', {  // Make sure to replace with the correct URL if needed
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
